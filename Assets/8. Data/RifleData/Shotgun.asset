@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b42ce190c1fbec4a91228800f3bd519, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6573421505463414068, guid: d433e740d7a58af4c8e1993f65010c32, type: 3}
+  castingPrefab: {fileID: 8412189137835979929, guid: b9465eff7e6823e4a9e63a5bb966954c, type: 3}
+  muzzleFlashPrefab: {fileID: 1320275964731592, guid: 0624c6f5a57851d48ba74b4f86ec13d7, type: 3}
+  impactPrefab: {fileID: 7720806478498198602, guid: 1b510e9955f5475408f5ac28c4aa4d2e, type: 3}
+  power: 30
+  range: 10
+  accuracy: 0.2
+  muzzleVelocity: 0.3
+  ejectPower: 50
+  impactDestroyTimer: 0.1
+  knockBackForce: 10
+  recoil: {x: 5, y: 0, z: 0}
+  increaseRecoil: {x: 0, y: 0, z: 0}
+  recoilAmount: 0.05
+  recoilPosition: 0.01
+  fireSfx: {fileID: 8300000, guid: 308686b2d6644ad47b998fddc6b48610, type: 3}
+  noAmmoSfx: {fileID: 8300000, guid: a31e29373f3cbe249a0b5a90b983bd79, type: 3}
+  reloadSfx: {fileID: 8300000, guid: a54c82248b3c52d4586659a7add4fc1d, type: 3}

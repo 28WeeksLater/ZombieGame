@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7c39c8a3-9dab-4ff4-9976-e5fbb3902350" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityXR-Scene-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityXR-Scene-Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Prefabs/Zombie 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Prefabs/Zombie 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/65/65639cc43a73860c06d47b583621af36.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/65/65639cc43a73860c06d47b583621af36.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/5d/5dfd833968086dec8404d0700bc6361b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/5d/5dfd833968086dec8404d0700bc6361b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/2. Scripts/UI/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2. Scripts/Unity XR/FixedPosAndRotInteractable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2. Scripts/Event/InteractableEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2. Scripts/Unity XR/Editor/FixedPosAndRotInteractableEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../RPG/Assets/Scripts/Item/Weapon/GunCtrl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/BloodData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.2/Runtime/Interaction/Interactors/XRSocketInteractor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/500779F0-6409-4365-82AB-81B5AC20C6AF/a5/b5339cf7/XRHelpURLConstants.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2. Scripts/Unity XR/Editor/XRItemGrabInteractableEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.2/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/2. Scripts/Common/Scene/SceneSetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0049532E-C432-485C-A342-60937DA7A054/69/0316c6a8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieActionBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.2/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5FDECBAF-F84F-4822-8C4A-2C8249167584/43/4ca48580/Motion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Spawner/ZombiePool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.2/Runtime/Interaction/Controllers/XRController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/Editor/XRItemGrabInteractableEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/XROffsetGrabInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/Gun/OnTargetReached.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Event/ConcentEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/Gun/PistolCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Physics/DamageSystemComponent.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Physics/MaterialSound.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Common/GasPumpGrab.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Manager/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Manager/SubCamManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Manager/CameraManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Common/Scene/Scene0/MoveTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Physics/BloodParticleSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/BloodData.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Event/ChainSawActivationEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/ChainSawCut.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Event/RopeEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Manager/SoundManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Physics/DamageSystem.cs" />
+      <option value="$USER_HOME$/AppData/Local/Temp/BNZ.60b9deef16952d7/ZombieController.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/Gun/ShotgunCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/UI/SceneLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/XRItemGrabInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/TutorialZombie.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/Gun/RifleCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/RifleTutorial.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/UI/EndingCredit.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/UnityAsset/VolumetricBloodFX/Shaders/BFX_Blood.shader" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/WristSocket.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/XRSocketInteractorWithName.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/ClimbInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/FixedPosAndRotInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/RayCastActivator.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Unity XR/TwoHandGrabInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/Gun/MachineGunCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Weapon/Gun/Magazine.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Manager/ZombieSoundManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Spawner/ZombiePool.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Spawner/TriggerSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieActionBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieSound.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieAnimator.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Physics/CopyMotion.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Spawner/ZombieSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieBehavior.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/ZombieController/ZombieCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/2. Scripts/Common/Player/AmmoCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/3. Assets/28WeeksLaterAsset/Zombie/Scripts/Physics/CopyMotionComponent.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1sSt4ORDGWJ7H9LV3kkg8npuXrZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/엔진/VR 게임/StandAlone\ZombieSurvival.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\admin\Desktop\엔진\VR 게임\StandAlone" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c39c8a3-9dab-4ff4-9976-e5fbb3902350" name="Default Changelist" comment="" />
+      <created>1620877629989</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620877629989</updated>
+      <workItem from="1620877638748" duration="3710000" />
+      <workItem from="1620916090123" duration="484000" />
+      <workItem from="1621424991360" duration="1270000" />
+      <workItem from="1621426651590" duration="124000" />
+      <workItem from="1621426795510" duration="219000" />
+      <workItem from="1621511023745" duration="649000" />
+      <workItem from="1621517993525" duration="3671000" />
+      <workItem from="1621523074459" duration="448000" />
+      <workItem from="1621523844379" duration="2359000" />
+      <workItem from="1621911621839" duration="53000" />
+      <workItem from="1622083636244" duration="3093000" />
+      <workItem from="1622098926131" duration="371000" />
+      <workItem from="1622100744161" duration="315000" />
+      <workItem from="1622101722531" duration="641000" />
+      <workItem from="1622104891750" duration="5589000" />
+      <workItem from="1622122725635" duration="214000" />
+      <workItem from="1622124801264" duration="699000" />
+      <workItem from="1622178333024" duration="4763000" />
+      <workItem from="1622191543297" duration="3000" />
+      <workItem from="1622191572427" duration="1390000" />
+      <workItem from="1622472358294" duration="1790000" />
+      <workItem from="1622521853039" duration="1544000" />
+      <workItem from="1622528049492" duration="3977000" />
+      <workItem from="1622539610237" duration="36000" />
+      <workItem from="1622549894451" duration="1442000" />
+      <workItem from="1622560609320" duration="5230000" />
+      <workItem from="1622623245182" duration="6121000" />
+      <workItem from="1622629856224" duration="1943000" />
+      <workItem from="1622635522724" duration="3071000" />
+      <workItem from="1622642459437" duration="231000" />
+      <workItem from="1622643855508" duration="507000" />
+      <workItem from="1622685035769" duration="10987000" />
+      <workItem from="1622710909382" duration="614000" />
+      <workItem from="1622711569995" duration="4213000" />
+      <workItem from="1622732369539" duration="594000" />
+      <workItem from="1622770699729" duration="3089000" />
+      <workItem from="1622776339764" duration="16303000" />
+      <workItem from="1622794697511" duration="396000" />
+      <workItem from="1622813105022" duration="1370000" />
+      <workItem from="1622816930966" duration="3120000" />
+      <workItem from="1622820810545" duration="2792000" />
+      <workItem from="1622867090075" duration="975000" />
+      <workItem from="1622872269360" duration="1958000" />
+      <workItem from="1622885164127" duration="3737000" />
+      <workItem from="1622895164865" duration="1853000" />
+      <workItem from="1622906426066" duration="64000" />
+      <workItem from="1622947680823" duration="3164000" />
+      <workItem from="1622975105744" duration="1301000" />
+      <workItem from="1623381392377" duration="118000" />
+      <workItem from="1623382656886" duration="3643000" />
+      <workItem from="1623392338913" duration="11658000" />
+      <workItem from="1623460878224" duration="4656000" />
+      <workItem from="1623473021703" duration="1288000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

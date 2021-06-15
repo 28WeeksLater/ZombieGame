@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.StandAlone.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Apps\Unity\Unity WorkSpace\StandAlone\.idea\.idea.StandAlone\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

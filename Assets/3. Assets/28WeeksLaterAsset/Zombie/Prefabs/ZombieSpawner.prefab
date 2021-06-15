@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3671407763280664209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3671407763280664208}
+  - component: {fileID: 641877801219825573}
+  m_Layer: 0
+  m_Name: ZombieSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3671407763280664208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671407763280664209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &641877801219825573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671407763280664209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1752a8962cdebbb47809db3486ec84d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MAX_ZOMBIE: 0
+  zombieSpawnTime: 1
+  spawnDistance: 15
+  zombiePrefab: {fileID: 2647207704549662671, guid: 45242e40cf6613743b8191d19da1843a, type: 3}
+  player: {fileID: 0}
+  skins:
+  - {fileID: 2100000, guid: d7c65763afe48c249ab02afef5611f8d, type: 2}
+  - {fileID: 2100000, guid: 22d682792bd34d74591acf0413feb079, type: 2}
+  - {fileID: 2100000, guid: 27c1fbdd2f799a64c8077cf6da8837e0, type: 2}
+  hairs:
+  - {fileID: 1743873750134902, guid: cea6e27a4e17ad74ca2bf00c7a80fc45, type: 3}
+  - {fileID: 1273219497479296, guid: 9eb5ce28091359045bfc0f6dcdaae8c1, type: 3}
+  - {fileID: 1505924036543802, guid: 166c74b50cb48274dbb5b20663c5f729, type: 3}
+  - {fileID: 1281026825425692, guid: d4e164dbac238634c98b8cea2059228d, type: 3}
+  - {fileID: 1141398449851310, guid: dc0527d9bd26118449190ce203dfad7e, type: 3}
+  - {fileID: 1479791549021918, guid: 4a866fb1a42c1c44e9729b572307b828, type: 3}
+  - {fileID: 1044262502575656, guid: e68dbfb302d79574398e2fc4aa78ab7a, type: 3}
+  - {fileID: 1342213250042656, guid: c9fe22d252823c7429946fde1dee5418, type: 3}
+  - {fileID: 1363398342439722, guid: c10b2f4eef6121d4d8bb6c7a7330b8cd, type: 3}
+  - {fileID: 1167992602880480, guid: 290c2785f88799146a0a7bd8a44879d1, type: 3}
+  - {fileID: 1747250199882298, guid: d5a630bd6f19b184f83f2f1f1efce47c, type: 3}
+  - {fileID: 1774260335537172, guid: 1bc25d310600ba443bb7b6883900610b, type: 3}
+  - {fileID: 1497383388872384, guid: 344d59106ae80004caf4de4884285078, type: 3}
+  - {fileID: 1881869024244744, guid: 710938f9d14b14744a9d89f5118fa7ff, type: 3}
+  - {fileID: 1539468828766142, guid: f0d8b895ac0f2794eae45cc377531ee1, type: 3}
+  - {fileID: 1720249481327532, guid: 2cc79e2aff1671f4ea576d303ef5f3b2, type: 3}
+  - {fileID: 1829513965571216, guid: de13f007cae9b91428e14db1bc0bbfbf, type: 3}
+  - {fileID: 1291178325198250, guid: af5359747755f4b419b0bd8d88ef2b42, type: 3}
+  - {fileID: 1843814800920674, guid: 60c029e73d1936b43923a0e0604fe94c, type: 3}
+  - {fileID: 1646284094649658, guid: d607840fcf25a44499352e03777209ad, type: 3}
+  - {fileID: 1702361829957950, guid: 0aa45ea08a9518848b7ec9b816a6d11d, type: 3}
+  - {fileID: 1314032043797924, guid: 12bb31a9188f43e47a5c78bc77ca2f48, type: 3}
+  stats:
+  - {fileID: 11400000, guid: 22bf41d2ff71f7b4a91dc1158eea820c, type: 2}
+  - {fileID: 11400000, guid: b0cf9dcc8418b9a468d249ff26172dbe, type: 2}
+  - {fileID: 11400000, guid: 77ef6d840535e5c4c8382a15884dcbc9, type: 2}
+  - {fileID: 11400000, guid: de758abe4f322904a9f23c7b1a46a641, type: 2}
+  - {fileID: 11400000, guid: 2483dd2bf97e25b41b8ec0e092944feb, type: 2}
+  active: 1
+  zombies: []
+  count: 0

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b42ce190c1fbec4a91228800f3bd519, type: 3}
+  m_Name: M42
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7994921550698269994, guid: 47ad55d22b3617048a7733a2cfd4ecf3, type: 3}
+  castingPrefab: {fileID: 858816449632824530, guid: 21413c215275ac1429a6909dc12a2a98, type: 3}
+  muzzleFlashPrefab: {fileID: 5239752042411968655, guid: 504e5db79d7483e4f8a3e93f70b70f4f, type: 3}
+  impactPrefab: {fileID: 7720806478498198602, guid: 1b510e9955f5475408f5ac28c4aa4d2e, type: 3}
+  power: 15
+  range: 40
+  accuracy: 0.015
+  muzzleVelocity: 0.1
+  ejectPower: 450
+  impactDestroyTimer: 0.05
+  knockBackForce: 10
+  recoil: {x: 10, y: 0, z: 0}
+  increaseRecoil: {x: 6, y: 0, z: 0}
+  recoilAmount: 0.03
+  recoilPosition: 0.02
+  fireSfx: {fileID: 8300000, guid: 1da3c9ab6769a9345a19b0c966cab760, type: 3}
+  noAmmoSfx: {fileID: 8300000, guid: a31e29373f3cbe249a0b5a90b983bd79, type: 3}
+  reloadSfx: {fileID: 8300000, guid: a45af48e92d455b4a8998fb291ff13a2, type: 3}

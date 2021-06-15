@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b42ce190c1fbec4a91228800f3bd519, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3340740381988723183, guid: 40681546013e8b64a9ffd6a8c743d658, type: 3}
+  castingPrefab: {fileID: 4042239585039995025, guid: 1c4080d30f89071459bf9a12b37c6451, type: 3}
+  muzzleFlashPrefab: {fileID: 5239752042411968655, guid: 504e5db79d7483e4f8a3e93f70b70f4f, type: 3}
+  impactPrefab: {fileID: 7720806478498198602, guid: 1b510e9955f5475408f5ac28c4aa4d2e, type: 3}
+  power: 30
+  range: 40
+  accuracy: 0.02
+  muzzleVelocity: 0.05
+  ejectPower: 500
+  impactDestroyTimer: 0.5
+  knockBackForce: 10
+  recoil: {x: 0, y: 0, z: 0}
+  increaseRecoil: {x: 30, y: 0, z: 0}
+  recoilAmount: 0.05
+  recoilPosition: 0.015
+  fireSfx: {fileID: 8300000, guid: d539235992f2b6548a81cff911eb198c, type: 3}
+  noAmmoSfx: {fileID: 8300000, guid: 24676fcb724092f4f81f31f4e0aec2f8, type: 3}
+  reloadSfx: {fileID: 8300000, guid: a45af48e92d455b4a8998fb291ff13a2, type: 3}

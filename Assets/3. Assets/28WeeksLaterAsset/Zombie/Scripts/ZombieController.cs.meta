@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4df26cbf51075644a88dc83a335d58b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - zombieData: {fileID: 11400000, guid: e964cbce9e1a2794586dd852c7207b73, type: 2}
+  - rayPos: {instanceID: 0}
+  - blood: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
