@@ -6,6 +6,6 @@
 
 플레이를 원하신다면 데모 파일을 이용해주시기 바랍니다.<br>
 해당 데모 파일은 VR 게임으로 VR 연동하지 않고 플레이는 불가능합니다.<br>
-[다운로드 링크] 미입력<br>
+[다운로드 링크(https://drive.google.com/file/d/1SksoGarZb4DNbxh00Ri4v4Y9gwg6d0b5/view?usp=sharing)] <br>
 
 -28주후 팀장 민경환-
