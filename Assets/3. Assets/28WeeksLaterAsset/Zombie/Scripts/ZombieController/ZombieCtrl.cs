@@ -35,18 +35,20 @@ public class ZombieCtrl : MonoBehaviour
 
     private float time = 0f;
 
-    void Start()
+    private void Start()
     {
         var player = GameManager.Instance.player.transform;
         if (player != null && behavior.CurrentState != State.TRIGGER) Target = player;
         Init();
         _movement = GetComponent<ZombieMovement>();
+        GetComponent<DamageSystem>().onTargetDied += KillZombie;
+        GetComponent<DamageSystem>().onTargetDamaged += d => DamageTaken();
     }
 
     public void Init()
     {
         transform.tag = "Zombie";
-        layerMask = 1 << 2;
+        layerMask = ((1 <<  LayerMask.NameToLayer("Ignore Raycast") ) | (1<<LayerMask.NameToLayer("Zombie")) | (1<<LayerMask.NameToLayer("Hand")) | (1<<LayerMask.NameToLayer("Inventory")) | (1<<LayerMask.NameToLayer("Grabbable")) | (1<<LayerMask.NameToLayer("GrabIgnoreRay")));
         layerMask = ~layerMask;
 
         HP = zombieData.InitHp;
@@ -61,7 +63,7 @@ public class ZombieCtrl : MonoBehaviour
         UpdateTargetPosition();
         UpdateState();
         UpdateRandomState();
-        //KillUseless();
+        KillUseless();
     }
 
 
@@ -87,9 +89,8 @@ public class ZombieCtrl : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(visionPoint.position, _direction, out hit, zombieData.ViewDistance, layerMask))
                 {
-                    if (hit.transform == Target)
+                    if (hit.transform == GameManager.Instance.player.transform)
                     {
-                        Target = hit.transform;
                         StartChasing();
                     }
                 }
@@ -121,7 +122,7 @@ public class ZombieCtrl : MonoBehaviour
     private void UpdateTargetPosition()
     {
         var position = Target.position;
-        TargetPos = new Vector3(position.x, transform.position.y, position.z);
+        TargetPos = new Vector3(position.x, Mathf.Abs(position.y-transform.position.y), position.z);
     }
 
     private void UpdateState()
@@ -156,8 +157,9 @@ public class ZombieCtrl : MonoBehaviour
 
     private void KillUseless()
     {
+        if (Vector3.Distance(TargetPos, transform.position) < 40.0f) return;
         life += Time.deltaTime;
-        if (life >= 10 && Vector3.Distance(TargetPos, transform.position) >= 30.0f)
+        if (life >= 20)
         {
             ReturnToPool();
         }
@@ -194,6 +196,7 @@ public class ZombieCtrl : MonoBehaviour
 
     public void DamageTaken()
     {
+        if (behavior.CurrentState == State.DIE) return;
         if (behavior.CurrentState == State.CHASING &&
             behavior.CurrentState == State.ATTACK) return;
         Target = GameManager.Instance.player.transform;

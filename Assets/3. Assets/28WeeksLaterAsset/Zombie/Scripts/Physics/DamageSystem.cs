@@ -12,7 +12,6 @@ public class DamageSystem : MonoBehaviour
 {
     public float HP;
     public bool isAlive = true;
-    private CopyMotion CopyMotion;
     
     public BloodParticleSystem bloodParticleSystem;
     
@@ -28,14 +27,21 @@ public class DamageSystem : MonoBehaviour
 
     public List<GameObject> targetComponents = new List<GameObject>();
 
-    private PlayerCtrl _playerCtrl;
-
     private bool isZombie = false;
 
     private ZombieCtrl _zombieController;
 
     private XRGrabInteractable _interactable;
     private bool isInteractable = false;
+    
+    public delegate void OnTargetDied();
+
+    public OnTargetDied onTargetDied;
+    public delegate void OnTargetDamaged(float damage);
+
+    public OnTargetDamaged onTargetDamaged;
+    
+    
     
     private void Awake()
     {
@@ -48,7 +54,6 @@ public class DamageSystem : MonoBehaviour
         var copyMotion = GetComponent<CopyMotion>();
         if (copyMotion != null)
         {
-            CopyMotion = copyMotion;
             isCopyMotionTarget = true;
             AddScriptToChild(transform);
         }
@@ -56,10 +61,6 @@ public class DamageSystem : MonoBehaviour
         {
             AddScript(transform);
             AddScriptToChild(transform);
-        }
-        if (gameObject.CompareTag("Player"))
-        {
-            _playerCtrl = GetComponent<PlayerCtrl>();
         }
 
         var interactive = GetComponent<XRGrabInteractable>();
@@ -131,9 +132,7 @@ public class DamageSystem : MonoBehaviour
     {
         if (!isCopyMotionTarget) return;
         if (isAlive) return;
-        
-        CopyMotion.isActive = false;
-        _zombieController.KillZombie();
+        onTargetDied();
     }
 
     public bool IsSelfCollision(GameObject collisionGameObject)
@@ -146,27 +145,21 @@ public class DamageSystem : MonoBehaviour
         if (isInvincible) return;
         if (Time.time - lastDamageTime < 0.3f) return;
         lastDamageTime = Time.time;
+
+        HP -= damage;
+        onTargetDamaged(damage);
+        if (HP <= 0)
+        {
+            isAlive = false;
+        }   
         
-        if (CompareTag("Player"))
-        {
-            _playerCtrl.Hit(damage);
-        }
-        else
-        {
-            _zombieController.DamageTaken();
-            HP -= damage;
-            if (HP <= 0)
-            {
-                isAlive = false;
-            }   
-        }
     }
     
     public void OnGunDamageTaken(float damage, Transform childTransform)
     {
         if (isInvincible) return;
         HP -= damage;
-        _zombieController.DamageTaken();
+        onTargetDamaged(damage);
         if (HP <= 0)
         {
             isAlive = false;

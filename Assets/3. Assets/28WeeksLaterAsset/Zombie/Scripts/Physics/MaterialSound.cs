@@ -20,7 +20,7 @@ public class MaterialSound : MonoBehaviour
     private Rigidbody _rigidbody;
 
     private bool swingPlayed = false;
-    private void Awake()
+    private void OnEnable()
     {
         if (audioTarget == null)
         {

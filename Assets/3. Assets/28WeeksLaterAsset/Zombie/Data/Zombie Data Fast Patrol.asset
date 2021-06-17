@@ -16,7 +16,7 @@ MonoBehaviour:
   viewDistance: 20
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 16384
   initHp: 100
   attackDist: 1.75
   spreadDist: 2.5

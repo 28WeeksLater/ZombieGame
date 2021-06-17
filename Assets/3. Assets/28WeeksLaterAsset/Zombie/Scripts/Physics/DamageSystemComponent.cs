@@ -48,7 +48,7 @@ public class DamageSystemComponent : MonoBehaviour
     private void OnComponentCollisionEnter(DamageSystemComponent opposite, Collision collision)
     {
         if (damageSystem.IsSelfCollision(collision.gameObject)) return;
-        if (gameObject.CompareTag("Player")) return;
+        if (collision.gameObject.CompareTag("Weapon") && gameObject.CompareTag("Player")) return;
         if (gameObject.CompareTag("Weapon") && collision.gameObject.CompareTag("Player")) return;
         if (collision.gameObject.layer == LayerMask.NameToLayer("Hand")) return;
         if (collision.gameObject.layer == LayerMask.NameToLayer("Inventory")) return;
@@ -65,16 +65,28 @@ public class DamageSystemComponent : MonoBehaviour
         
         var speed = collision.impulse.magnitude / rigidbody.mass;
         if (speed < 0.05f) return;
-        
         if (opposite.Damage == 0f) return;
-        if (rigidbody.velocity.magnitude < 2f) return;
-        var damageMultiplier = opposite.minDamageMultiplier + 
-                               opposite.maxDamageMultiplier * (rigidbody.velocity.magnitude - 2f) / 5f;
-        
-        damageSystem.OnDamageTaken(opposite.Damage * damageMultiplier, collision.gameObject, transform);
-        if (gameObject.CompareTag("Body") && !collision.gameObject.CompareTag("Body"))
+        if (gameObject.CompareTag("Body"))
         {
-            bloodParticleSystem.Create(collision, transform);
+            if (!collision.gameObject.CompareTag("Body"))
+            {
+                bloodParticleSystem.Create(collision, transform);
+                damageSystem.OnDamageTaken(opposite.Damage, collision.gameObject, transform);    
+            }
+        }
+        else if (gameObject.CompareTag("Player"))
+        {
+            
+            var damageMultiplier = opposite.minDamageMultiplier + 
+                                   opposite.maxDamageMultiplier * (rigidbody.velocity.magnitude - 2f) / 5f;
+            damageSystem.OnDamageTaken(opposite.Damage * damageMultiplier, collision.gameObject, transform);
+        }
+        else
+        {
+            if (rigidbody.velocity.magnitude < 2f) return;
+            var damageMultiplier = opposite.minDamageMultiplier + 
+                                   opposite.maxDamageMultiplier * (rigidbody.velocity.magnitude - 2f) / 5f;
+            damageSystem.OnDamageTaken(opposite.Damage * damageMultiplier, collision.gameObject, transform);
         }
     }
 

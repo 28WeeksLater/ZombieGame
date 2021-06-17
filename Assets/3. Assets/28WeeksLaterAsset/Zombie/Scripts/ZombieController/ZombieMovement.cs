@@ -191,7 +191,7 @@ public class ZombieMovement : ZombieActionBase
                 yield return new WaitForSeconds(ZombieAnimator.clipTimes["Bite"]);
                 if (controller.Target.gameObject.activeInHierarchy)
                 {
-                    controller.Target.GetComponent<ZombieCtrl>().KillZombieNow();
+                    controller.Target?.GetComponent<ZombieCtrl>().KillZombieNow();
                     _agent.stoppingDistance = 0;
                     _agent.speed = 0;
                     controller.ChangeState(State.IDLE);

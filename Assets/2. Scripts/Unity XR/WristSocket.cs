@@ -25,6 +25,7 @@ public class WristSocket : XRSocketInteractor
     private XROffsetGrabInteractable offsetGrab = null;
     private XRSimpleInteractable simple = null;
     private XRSocketInteractorWithName socket = null;
+    private DamageSystem ds = null;
     protected override void Awake()
     {
         base.Awake();
@@ -43,7 +44,7 @@ public class WristSocket : XRSocketInteractor
 
     public override bool CanSelect(XRBaseInteractable interactable)
     {
-        return base.CanSelect(interactable) && interactable.CompareTag(targetTag);
+        return base.CanSelect(interactable) && interactable.CompareTag(targetTag) && canSelect;
     }
 
     protected override void OnHoverEntering(HoverEnterEventArgs args)
@@ -60,12 +61,13 @@ public class WristSocket : XRSocketInteractor
         base.OnHoverExiting(args);
 
         // If the wrist didn't grab the object, we can no longer select
-        if (!selectTarget)
+       if (!selectTarget)
             canSelect = false;
     }
 
     protected override void OnSelectEntering(SelectEnterEventArgs args)
-    {
+    { 
+        
         // Store object when select begins
         base.OnSelectEntering(args);
         StoreObjectSizeScale(args.interactable);
@@ -74,7 +76,6 @@ public class WristSocket : XRSocketInteractor
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         // Once select has occured, scale object to size
-        base.OnSelectEntered(args);
         var temp = args.interactable;
         
         if (temp is TwoHandGrabInteractable)
@@ -91,7 +92,12 @@ public class WristSocket : XRSocketInteractor
         else if (temp is XRItemGrabInteractable)
         {
             item = temp.GetComponent<XRItemGrabInteractable>();
-            two.canTakeByOther = true;
+            if (item.GetComponent<DamageSystem>())
+            {
+                ds = item.GetComponent<DamageSystem>();
+                ds.enabled = false;
+            }
+            item.canTakeByOther = true;
         }
 
         if (temp.GetComponentInChildren<XROffsetGrabInteractable>())
@@ -112,13 +118,14 @@ public class WristSocket : XRSocketInteractor
             socket.showInteractableHoverMeshes = false;
             socket.enabled = false;
         }
+        base.OnSelectEntered(args);
         TweenSizeToSocket(temp);
+       
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         // Once the user has grabbed the object, scale to original size
-        base.OnSelectExited(args);
         if (two)
         {
             two.canTakeByOther = false;
@@ -132,6 +139,11 @@ public class WristSocket : XRSocketInteractor
         else if (item)
         {
             item.canTakeByOther = false;
+            if (ds)
+            {
+                ds.enabled = true;
+                ds = null;
+            }
             item = null;
         }
 
@@ -146,7 +158,7 @@ public class WristSocket : XRSocketInteractor
             socket.showInteractableHoverMeshes = true;
             socket.enabled = true;
         }
-        
+        base.OnSelectExited(args);
         SetOriginalScale(args.interactable);
     }
 
@@ -216,7 +228,7 @@ public class WristSocket : XRSocketInteractor
     }
 
     // Is the socket active, and object is being held by different interactor
-    public override bool isSelectActive => base.isSelectActive && canSelect;
+    //public override bool isSelectActive => base.isSelectActive && canSelect;
 
     private void OnDrawGizmos()
     {

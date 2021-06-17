@@ -32,7 +32,9 @@ public class MachineGunCtrl : MonoBehaviour
     public AudioClip fireSfx;
 
     private XRBaseInteractable interactable;
-
+    private DeviceBasedContinuousMoveProvider movement;
+    private float originSpeed;
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -54,6 +56,10 @@ public class MachineGunCtrl : MonoBehaviour
     {
         if (firing != null)
         {
+            foreach (var i in muzzleFlashPrefab)
+            {
+                i.Stop();
+            }
             StopCoroutine(firing);
         }
     }
@@ -108,5 +114,19 @@ public class MachineGunCtrl : MonoBehaviour
         temp.AddTorque(new Vector3(0, Random.Range(100f, 500f), Random.Range(100f, 1000f)), ForceMode.Impulse);
 
         Destroy(tempCasing, destroyTimer);
+    }
+
+    public void StartPlayerMovement()
+    {
+        if (!movement) return;
+        movement.moveSpeed = originSpeed;
+        movement = null;
+    }
+    
+    public void StopPlayerMovement()
+    {
+        movement = interactable.selectingInteractor.GetComponentInParent<DeviceBasedContinuousMoveProvider>();
+        originSpeed = movement.moveSpeed;
+        movement.moveSpeed = 0.0f;
     }
 }

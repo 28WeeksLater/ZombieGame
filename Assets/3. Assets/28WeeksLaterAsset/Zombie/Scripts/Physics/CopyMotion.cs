@@ -28,7 +28,13 @@ public class CopyMotion : MonoBehaviour
         physicsTarget = transform.Find("Physics").Find("Root");
         animationTarget = transform.Find("Animation").Find("Root");
         transform.Find("Animation").GetComponent<Animator>().cullingMode = AnimatorCullingMode.AlwaysAnimate;
+        GetComponent<DamageSystem>().onTargetDied += Deactivate;
         AddScriptToChild(physicsTarget);
+    }
+
+    private void Deactivate()
+    {
+        isActive = false;
     }
 
     public void ReActivate()

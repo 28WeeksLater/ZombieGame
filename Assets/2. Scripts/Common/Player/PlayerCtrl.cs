@@ -7,14 +7,12 @@ using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour
 {
-    [Header("Player Detail")] [SerializeField]
-    private GameObject cam;
-
+    [Header("Player Info")] 
     public float fullHP = 100;
     public float HP = 0;
     public int ammoCount = 0;
 
-    [Header("Player Info")] [SerializeField]
+    [Header("Player UI")] [SerializeField]
     private TextMeshProUGUI hpInfo;
 
     [SerializeField] private TextMeshProUGUI Info;
@@ -42,17 +40,19 @@ public class PlayerCtrl : MonoBehaviour
         HP = fullHP;
         cm = GetComponent<DeviceBasedContinuousMoveProvider>();
         audioSource = GetComponent<AudioSource>();
+        GetComponent<DamageSystem>().onTargetDamaged += Hit;
         HPInfo();
     }
 
     private void Update()
     {
+        if (isDie) return;
+        
         if (HP <= 0 && !isDie)
-            Die();
-
-        if (isDie)
-            cm.enabled = false;
-
+        {
+            GameManager.Instance.PlayerDie();
+        }
+        
         if (initInfoTime >= updateWatch)
         {
             HPInfo();
@@ -84,7 +84,7 @@ public class PlayerCtrl : MonoBehaviour
     private void HPInfo()
     {
         watchImg.sprite = sprite[0];
-        hpInfo.text = HP.ToString();
+        hpInfo.text = ((int)HP).ToString();
 
         if (HP > 50)
             hpInfo.color = Color.white;
@@ -105,7 +105,6 @@ public class PlayerCtrl : MonoBehaviour
     public void Die()
     {
         isDie = true;
-        CameraManager.Instance.Die();
         audioSource.PlayOneShot(dieSFX);
     }
 

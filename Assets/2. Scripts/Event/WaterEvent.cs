@@ -29,11 +29,6 @@ public class WaterEvent : MonoBehaviour
         {
             Drown.Invoke();
             isDrown = false;
-            Debug.Log("Collide");
-        }
-        else if(other.transform.CompareTag("Zombie") || other.transform.CompareTag("Food"))
-        {
-            Destroy(other.gameObject);
         }
     }
 }
